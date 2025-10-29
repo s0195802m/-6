@@ -6,20 +6,7 @@ header h1 {
   color: rgb(250, 138, 157);
 }
 
-.list-group-item a {
-  color: #e75085;
-  text-decoration: none;
-}
-
-.list-group-item a:hover {
-  text-decoration: underline;
-}
-
-.table td,
-.table th {
-  vertical-align: middle;
-}
-
+/* Картинки и логотип */
 .logo {
   width: 60px;
   height: 60px;
@@ -29,7 +16,40 @@ header h1 {
   margin: 0 auto;
 }
 
-/* MOBILE FIRST адаптация */
+/* Ограничение размера остальных изображений */
+.custom-img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Ссылки */
+.list-group-item a {
+  color: #e75085;
+  text-decoration: none;
+}
+
+.list-group-item a:hover {
+  text-decoration: underline;
+}
+
+/* Таблица */
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+/* Разные цвета строк таблицы */
+.table tbody tr:nth-child(odd) {
+  background-color: #ffe6ec; /* светло-розовый */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #fffafc; /* почти белый */
+}
+
+/* Mobile First адаптация */
 @media (max-width: 768px) {
   header h1 {
     text-align: center;
