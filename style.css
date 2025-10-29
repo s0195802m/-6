@@ -40,13 +40,13 @@ header h1 {
   vertical-align: middle;
 }
 
-/* Разные цвета строк */
+/* Разные цвета строк - ваши оригинальные цвета */
 .table tbody tr:nth-child(odd) {
-  background-color: #ffe6ec;
+  background-color: #ec0493;  /* Ярко-розовый для нечетных строк */
 }
 
 .table tbody tr:nth-child(even) {
-  background-color: #fffafc;
+  background-color: #f84a92;  /* Розовый для четных строк */
 }
 
 /* Адаптация */
