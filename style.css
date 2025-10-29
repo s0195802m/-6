@@ -6,20 +6,20 @@ header h1 {
   color: rgb(250, 138, 157);
 }
 
-/* Логотип */
-.logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
+/* Все изображения */
+.custom-img {
+  max-width: 150px;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
 
-/* Все остальные изображения */
-.custom-img {
-  max-width: 150px; /* уменьшено */
-  height: auto;
+/* Круглый логотип — приоритетнее */
+.logo {
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 50%;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
 }
@@ -40,16 +40,16 @@ header h1 {
   vertical-align: middle;
 }
 
-/* Разные цвета строк таблицы */
+/* Разные цвета строк */
 .table tbody tr:nth-child(odd) {
-  background-color: #ffe6ec; /* светло-розовый */
+  background-color: #ffe6ec;
 }
 
 .table tbody tr:nth-child(even) {
-  background-color: #fffafc; /* почти белый */
+  background-color: #fffafc;
 }
 
-/* Mobile First адаптация */
+/* Адаптация */
 @media (max-width: 768px) {
   header h1 {
     text-align: center;
@@ -59,4 +59,3 @@ header h1 {
     font-size: 14px;
   }
 }
-
